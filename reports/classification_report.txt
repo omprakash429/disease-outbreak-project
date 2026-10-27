@@ -1,0 +1,10 @@
+                  precision    recall  f1-score   support
+
+  Animal contact      0.355     0.802     0.492       131
+            Food      0.946     0.919     0.932      4893
+Person-to-person      0.969     0.954     0.961      6269
+           Water      0.795     0.890     0.840       621
+
+        accuracy                          0.934     11914
+       macro avg      0.766     0.891     0.806     11914
+    weighted avg      0.944     0.934     0.938     11914

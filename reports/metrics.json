@@ -1,0 +1,119 @@
+{
+  "rows_after_cleaning": 59566,
+  "train_rows": 47652,
+  "test_rows": 11914,
+  "class_counts": {
+    "Person-to-person": 31342,
+    "Food": 24466,
+    "Water": 3103,
+    "Animal contact": 655
+  },
+  "model_comparison": {
+    "Baseline (always guess most common)": {
+      "accuracy": 0.5261876783615914,
+      "macro_f1": 0.1723862948908321
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9130434782608695,
+      "macro_f1": 0.7604184740733823
+    },
+    "Random Forest": {
+      "accuracy": 0.934446869229478,
+      "macro_f1": 0.8063065788872433
+    }
+  },
+  "main_model": "Random Forest",
+  "per_class": {
+    "Animal contact": {
+      "precision": 0.3547297297297297,
+      "recall": 0.8015267175572519,
+      "f1-score": 0.4918032786885246,
+      "support": 131.0
+    },
+    "Food": {
+      "precision": 0.9459402608329828,
+      "recall": 0.9190680564071122,
+      "f1-score": 0.9323105628692858,
+      "support": 4893.0
+    },
+    "Person-to-person": {
+      "precision": 0.9691958495460441,
+      "recall": 0.9535811134152178,
+      "f1-score": 0.9613250783951114,
+      "support": 6269.0
+    },
+    "Water": {
+      "precision": 0.7945402298850575,
+      "recall": 0.8904991948470209,
+      "f1-score": 0.8397873955960516,
+      "support": 621.0
+    }
+  },
+  "overall": {
+    "accuracy": 0.934446869229478,
+    "macro_avg": {
+      "precision": 0.7661015174984536,
+      "recall": 0.8911687705566507,
+      "f1-score": 0.8063065788872433,
+      "support": 11914.0
+    },
+    "weighted_avg": {
+      "precision": 0.9437849214716427,
+      "recall": 0.934446869229478,
+      "f1-score": 0.9379114237663012,
+      "support": 11914.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Animal contact",
+      "Food",
+      "Person-to-person",
+      "Water"
+    ],
+    "matrix": [
+      [
+        105,
+        16,
+        1,
+        9
+      ],
+      [
+        151,
+        4497,
+        179,
+        66
+      ],
+      [
+        19,
+        204,
+        5978,
+        68
+      ],
+      [
+        21,
+        37,
+        10,
+        553
+      ]
+    ]
+  },
+  "overlap_check": {
+    "seen_combo_pct": 25.37351015611885,
+    "unseen_rows": 8891,
+    "unseen_accuracy": 0.9172196603306715,
+    "unseen_macro_f1": 0.7991266295431517
+  },
+  "illnesses_range": [
+    2.0,
+    403000.0,
+    196.0
+  ],
+  "feature_importance": {
+    "Illnesses": 0.01621839667824883,
+    "Month": 0.017792690862949618,
+    "State": 0.05827923103720878,
+    "Etiology": 0.23739043240584556,
+    "Setting": 0.35244132846719384
+  }
+}

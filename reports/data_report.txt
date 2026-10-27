@@ -1,0 +1,32 @@
+Rows: 66713   Columns: 19
+Exact duplicate rows: 1428
+
+Column                           Type        Missing %   Unique
+Year                             int64             0.0       53
+Month                            int64             0.0       12
+State                            str               0.0       58
+Primary Mode                     str               0.0        6
+Etiology                         str              24.5      787
+Serotype or Genotype             str              75.3      765
+Etiology Status                  str              24.5       57
+Setting                          str               8.9      597
+Illnesses                        str               0.0      476
+Hospitalizations                 float64          12.8       87
+Info On Hospitalizations         str              12.3      356
+Deaths                           float64          11.9       21
+Info On Deaths                   str              12.4      355
+Food Vehicle                     str              81.3     3779
+Food Contaminated Ingredient     str              95.9      518
+IFSAC Category                   str              82.5       25
+Water Exposure                   str              95.3       10
+Water Type                       str              95.9       56
+Animal Type                      str              99.1       61
+
+Target options in 'Primary Mode':
+Primary Mode
+Person-to-person                                     32414
+Food                                                 24729
+Indeterminate/unknown                                 5677
+Water                                                 3106
+Animal contact                                         655
+Environmental contamination other than food/water      132
